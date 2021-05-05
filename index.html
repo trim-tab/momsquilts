@@ -9,7 +9,8 @@
 <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Raleway">
       <script src="https://kit.fontawesome.com/90b28c8665.js" crossorigin="anonymous"></script>
-  
+ 
+ 
 	<body>
 		<div class = "flex">
 			<div class = "heading">
@@ -21,7 +22,7 @@
 		</div>
 		
 		
-			<main class = "quilts">
+			<main id = "quilts" class = "quilts">
 				<article class = "quilt-item">
 					<h2> Janine's Quilt</h2>
 					<p>Janine's quilt was made for Janine using triangles. The triangles are put together
@@ -33,9 +34,9 @@
 					<img src ="../momsquilts/images/1quilt.jpg">
 					<button>
 						<div class= "empty"></div>
-						<div class="price">$50</div>
+						<div class="price">$49</div>
 						<div class = "heart">
-							<i class="far fa-heart"></i>
+							<i onclick="toggleHeart()" id ="heart1" class="fa fa-heart-o" aria-hidden="true" ></i>
 						</div>
 					</button>
 				</article>
@@ -52,7 +53,7 @@
 						<div class= "empty"></div>
 						<div class="price">$50</div>
 						<div class = "heart">
-							<i class="far fa-heart"></i>
+							<i onclick="toggleHeart()" id ="heart2" class="fa fa-heart-o" aria-hidden="true" ></i>
 						</div>
 					</button>
 				</article>
@@ -68,8 +69,9 @@
 					<button>	<div class= "empty"></div>
 						<div class="price">$50</div>
 						<div class = "heart">
-							<i class="far fa-heart"></i>
-						</div></button>
+							<i onclick="toggleHeart()" id ="heart3" class="fa fa-heart-o" aria-hidden="true" ></i>
+						</div>
+					</button>
 				</article>
 				<article class = "quilt-item">
 					<h2> Milo's Quilt</h2>
@@ -83,8 +85,9 @@
 					<button>	<div class= "empty"></div>
 						<div class="price">$50</div>
 						<div class = "heart">
-							<i class="far fa-heart"></i>
-						</div></button>
+							<i onclick="toggleHeart()" id ="heart4" class="fa fa-heart-o" aria-hidden="true" ></i>
+						</div>
+					</button>
 					</article>
 					<article class = "quilt-item">
 					<h2> My Quilt</h2>
@@ -98,8 +101,9 @@
 					<button>	<div class= "empty"></div>
 						<div class="price">$50</div>
 						<div class = "heart">
-							<i class="far fa-heart"></i>
-						</div></button>
+							<i onclick="toggleHeart()" id ="heart5" class="fa fa-heart-o" aria-hidden="true" ></i>
+						</div>
+					</button>
 					</article>
 					<article class = "quilt-item">
 					<h2> My Quilt</h2>
@@ -113,8 +117,9 @@
 					<button>	<div class= "empty"></div>
 						<div class="price">$50</div>
 						<div class = "heart">
-							<i class="far fa-heart"></i>
-						</div></button>
+							<i onclick="toggleHeart()" id ="heart6" class="fa fa-heart-o" aria-hidden="true" ></i>
+						</div>
+					</button>
 					</article>
 					<article class = "quilt-item">
 					<h2> My Quilt</h2>
@@ -128,8 +133,9 @@
 					<button>	<div class= "empty"></div>
 						<div class="price">$50</div>
 						<div class = "heart">
-							<i class="far fa-heart"></i>
-						</div></button>
+							<i onclick="toggleHeart()" id ="heart7" class="fa fa-heart-o" aria-hidden="true" ></i>
+						</div>
+					</button>
 					</article>
 					<article class = "quilt-item">
 					<h2> My Quilt</h2>
@@ -143,8 +149,9 @@
 					<button>	<div class= "empty"></div>
 						<div class="price">$50</div>
 						<div class = "heart">
-							<i class="far fa-heart"></i>
-						</div></button>
+							<i onclick="toggleHeart()" id ="heart8" class="fa fa-heart-o" aria-hidden="true" ></i>
+						</div>
+					</button>
 					</article>
 					<article class = "quilt-item">
 					<h2> My Quilt</h2>
@@ -158,8 +165,9 @@
 					<button>	<div class= "empty"></div>
 						<div class="price">$50</div>
 						<div class = "heart">
-							<i class="far fa-heart"></i>
-						</div></button>
+							<i onclick="toggleHeart()" id ="heart9" class="fa fa-heart-o" aria-hidden="true" ></i>
+						</div>
+					</button>
 					</article>
 					<article class = "quilt-item">
 					<h2> My Quilt</h2>
@@ -173,8 +181,9 @@
 					<button>	<div class= "empty"></div>
 						<div class="price">$50</div>
 						<div class = "heart">
-							<i class="far fa-heart"></i>
-						</div></button>
+							<i onclick="toggleHeart()" id ="heart10" class="fa fa-heart-o" aria-hidden="true" ></i>
+						</div>
+					</button>
 					</article>
 					<article class = "quilt-item">
 					<h2> My Quilt</h2>
@@ -188,8 +197,9 @@
 					<button>	<div class= "empty"></div>
 						<div class="price">$50</div>
 						<div class = "heart">
-							<i class="far fa-heart"></i>
-						</div></button>
+							<i onclick="toggleHeart()" id ="heart11" class="fa fa-heart-o" aria-hidden="true" ></i>
+						</div>
+					</button>
 					</article>
 					<article class = "quilt-item">
 					<h2> My Quilt</h2>
@@ -203,12 +213,13 @@
 					<button>	<div class= "empty"></div>
 						<div class="price">$50</div>
 						<div class = "heart">
-							<i class="far fa-heart"></i>
-						</div></button>
+							<i onclick="toggleHeart()" id ="heart12" class="fa fa-heart-o" aria-hidden="true" ></i>
+						</div>
+					</button>
 					</article>	
 			</main>
 		</div>
 		
 	</body>
-	
+	 <script src = "heart.js"></script>
 </html

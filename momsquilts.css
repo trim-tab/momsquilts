@@ -201,21 +201,21 @@ letter-spacing:.2em;
 	}
 	.price{
 	align-items: center;
-	justify-content:space-between;
+	justify-content:center;
 	text-decoration:none;
 	color: grey;
 	font-family: 'Fredoka One', Helvetica, Sans-Serif; 
 	font-size: 30px;
 	font-weight:300;
 	text-transform:uppercase;
-	width:2em;
 	}
 	.heart{
+	float:right;
 	width:1.25em;
 	color: grey;
 	flex-direction: row;
 	align-items: center;
-	justify-content:space-between;
+	justify-content:flex-end;
 	
 	}
 	button{
@@ -227,9 +227,20 @@ letter-spacing:.2em;
 	align-items: center;
 	order:5;
 	background-color: #D8C4CE;
+	}
 
-	
-	}1	
+.fa-heart-o {
+  color: red;
+  cursor: pointer;
+}
+
+.fa-heart {
+  color: red;
+  cursor: pointer;
+}
+#heart{
+}
+
 
 }
 
