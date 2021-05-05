@@ -1,8 +1,7 @@
+
 function toggleHeart() {
-// if clicked value is the same as id
 window.onclick = e => {
-	var id = e.target.id;
-	var heart= document.getElementById(id);
+	var heart = e.target;
 	  heart.classList.add('animate');
    setTimeout(() => {
         heart.classList.toggle('active');
