@@ -9,6 +9,11 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@600&display=swap');
+
+
 .flex{
 display: flex;
 width:100%;
@@ -32,7 +37,6 @@ body{
 background-color: #E3E2D9;}
 
 main {
-
 max-width: 500px;
 margin: 0 auto;
 }
@@ -188,8 +192,8 @@ letter-spacing:.2em;
 	flex-direction:column;
 	}
 
+/* Spacer which allows space between work */
 	.empty{
-	
 	align-items: center;
 	justify-content:space-between;
 	text-decoration:none;
@@ -204,17 +208,15 @@ letter-spacing:.2em;
 	align-items: center;
 	justify-content:center;
 	text-decoration:none;
-	color: grey;
-	font-family: 'Fredoka One', Helvetica, Sans-Serif; 
-	font-size: 30px;
-	font-weight:300;
+	font-family: 'PT Sans', Helvetica, Sans-Serif; 
+	font-size: 27px;
+	font-weight:600;
 	text-transform:uppercase;
 	}
 	.heart{
 	float:right;
 	width: 1em;
 	font-size: 20pt;
-	color: grey;
 	flex-direction: row;
 	align-items: center;
 	justify-content:flex-end;
@@ -229,63 +231,67 @@ letter-spacing:.2em;
 	align-items: center;
 	order:5;
 	background-color: #D8C4CE;
+/* 	color: #2D292B; */
+	color: #494246;
+	}
+	
+	button:hover{
+	background-color: #A08594;
+	 color:white;
 	}
 
-	.fa-heart-o {
-		color: #8E2F2B;
-		cursor: pointer;
- 	
-	}
 
-	.fa-heart {
-		color: #8E2F2B;
-		cursor: pointer;
-		
-	}
 	.counter{
-	color: #8E2F2B;
-	font-family: 'Raleway', Helvetica, Sans-Serif; 
-	font-size: 17pt;
+	color: #F9F7EC;
+	font-family: 'Blinker', Helvetica, Sans-Serif; 
+	font-size: 20pt;
 	line-height: 1.55em;
-	font-weight:300;
+	font-weight:600;
 	}
 	
-.toggle{
+  .counter.active:before{
+  color: red;
+	font-family: 'Blinker', Helvetica, Sans-Serif; 
+	font-size: 20pt;
+	line-height: 1.55em;
+	font-weight:600;
+  }
+	
+	
+	
+	.toggle{
+	}
 
-}
-
-.toggle:before{
+	.toggle:before{
 	content: "\f004";
-font-family: 'Font Awesome 5 Free';
-font-weight: 400;
-color:  #6B1F24;
-padding: 1px;
-margin-left:1px;
-font-size:1em;
-letter-spacing:3px;
-
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 400;
+	color:  #F9F7EC;
+	padding: 1px;
+	margin-left:1px;
+	font-size:1em;
+	letter-spacing:3px;
 	}
-	
-.toggle.active:before{
-content: "\f004";
-font-family: 'Font Awesome 5 Free';
-font-weight: 900;
-color:  #6B1F24;
-padding: 1px;
-margin-left:1px;
-font-size:1em;
-letter-spacing:3px;
+		
+	.toggle.active:before{
+	content: "\f004";
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	/* color:  #6B1F24; dark red */
+	color: #AD275E;
+	padding: 1px;
+	margin-left:1px;
+	font-size:.95em;
+	letter-spacing:3px;
+	}
+
+	.toggle.animate {
+			animation: animate .3s cubic-bezier(0.4, 0.0, 0.2, 1);
+	}
+
+	@keyframes animate {
+			0%   { transform: scale(1); }
+			50%  { transform: scale(0); }
+			100% { transform: scale(1); }
+	}
 }
-
-.toggle.animate {
-    animation: animate .3s cubic-bezier(0.4, 0.0, 0.2, 1);
-}
-
-@keyframes animate {
-    0%   { transform: scale(1); }
-    50%  { transform: scale(0); }
-    100% { transform: scale(1); }
-}
-
-
-
